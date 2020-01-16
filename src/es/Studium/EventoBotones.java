@@ -9,13 +9,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class VariosBotones extends Frame implements WindowListener, ActionListener
+public class EventoBotones extends Frame implements WindowListener, ActionListener
 {
 	private static final long serialVersionUID = 1L;
 	Button btnBoton1 = new Button("Uno");
 	Button btnBoton2 = new Button("Dos");
 	Label lblEtiqueta = new Label("");
-	public VariosBotones() 
+	public EventoBotones() 
 	{
 		setLayout(new FlowLayout()); setTitle("Diferenciar botones");
 		add(btnBoton1);
@@ -29,7 +29,7 @@ public class VariosBotones extends Frame implements WindowListener, ActionListen
 	}
 	public static void main(String[] args) 
 	{
-		new VariosBotones(); 
+		new EventoBotones(); 
 	}
 	public void windowActivated(WindowEvent we) {}
 	public void windowClosed(WindowEvent we) {} 
